@@ -2,10 +2,34 @@
 //
 
 #include <iostream>
+#include<string>
+#include"Player.h"
+#include"Boss.h"
+//I do not own nothing Fear and Hunger realted I just wanted to do a scripted fight 
+//make a class for the enemie
+//make a class for the prota
+//make a inv system
+//extra challenege make it a pointer and see what to do with it,do that later 
+//2 hours spent on this 3/21
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //all this in 40 with the most amount of errors on string, constructors,and dyanmically allocating new memories  
+    Boss Testboss("Crow Mauler", 5000,200);
+    Player Testname ("Leguard",100,10);
+    int choice;//do I make this a main issue or a class issue honestly 
+    std::string item = "Eastern Sword";
+    Testboss.Display();
+    std::cout << "Press 1 to display inventory \n";
+    std::cin >> choice;
+    Testname.Display(choice);
+    if (Testname.AddItem(item)) {
+        std::cout << item << " was added to your inv at slot " << Testname.IndexItem(item) << std::endl;
+    }else
+        std::cout << "Item was not added ";
+       
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
