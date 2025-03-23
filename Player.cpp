@@ -1,5 +1,6 @@
 #include"Player.h"
 #include"string"
+#include"Item.h"
 #include <iostream>
 
 void Player::Display(int number){
@@ -20,15 +21,14 @@ void Player::DisplayInv(){
 };
 
 //first optimization question 
-bool Player::AddItem(std::string item){
+bool Player::AddItem(Item* inItem){
 	if (size >= max) {
 		std::cout << "Inv is full" << std::endl;
 		return false;
 	};
-		inventory[size] = item;
+		inventory[size] = *inItem;
 		size++;
 		return true;
-
 };
 
 
@@ -39,6 +39,10 @@ int Player::IndexItem(std::string itemname) {
 		if (inventory[i] == itemname) return i+1;
 	};
 	return -1;//if not found for whatever reason,pr here 
+};
+
+void Player::Usescroll(Player*& playername,Item* scroll) {
+	if (playername->AddItem(scroll));
 };
 
 
