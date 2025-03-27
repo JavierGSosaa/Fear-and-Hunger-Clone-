@@ -1,7 +1,7 @@
 #pragma once
 #include"Player.h"
 #include<string>
-
+class Player;
 class Item {
 public:
 	std::string name;

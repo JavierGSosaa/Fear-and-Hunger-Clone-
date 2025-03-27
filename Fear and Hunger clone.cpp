@@ -5,6 +5,7 @@
 #include<string>
 #include"Player.h"
 #include"Boss.h"
+#include"Item.h"
 //I do not own nothing Fear and Hunger realted I just wanted to do a scripted fight 
 //make a class for the enemie
 //make a class for the prota
@@ -16,16 +17,20 @@ int main()
 {
     //all this in 40 with the most amount of errors on string, constructors,and dyanmically allocating new memories  
     Boss Testboss("Crow Mauler", 5000,200);
-    Player Testname ("Leguard",100,10);
+    Player* Testname=new Player ("Leguard",100,10);//issue here 
     Item* scroll = new Item("nothing",1);
     int choice;//do I make this a main issue or a class issue honestly 
     std::string item = "Eastern Sword";
-    Testboss.Display();
+    /*Testboss.Display();
+    */
+    
     std::cout << "Press 1 to display inventory \n";
     std::cin >> choice;
-    Testname.Display(choice);
+    /*Testname->Display(choice);
+    */
+    
     //this implenation took 2 hours and changed to get it to work 
-    Testname.Usescroll(Testname,scroll);// wanna use the scroll to enclpaute 
+    Testname->Usescroll(Testname,scroll);// wanna use the scroll to enclpaute 
    
     delete scroll;
 

@@ -1,4 +1,13 @@
-﻿  Fear and Hunger clone.cpp
+﻿  Item.cpp
+C:\Users\Javie\source\repos\Fear and Hunger clone\Fear and Hunger clone\Player.h(15,15): error C2027: use of undefined type 'Item'
+  (compiling source file 'Item.cpp')
+      C:\Users\Javie\source\repos\Fear and Hunger clone\Fear and Hunger clone\Player.h(4,7):
+      see declaration of 'Item'
+  
+C:\Users\Javie\source\repos\Fear and Hunger clone\Fear and Hunger clone\Player.h(19,3): warning C4150: deletion of pointer to incomplete type 'Item'; no destructor called
+  (compiling source file 'Item.cpp')
+      C:\Users\Javie\source\repos\Fear and Hunger clone\Fear and Hunger clone\Player.h(4,7):
+      see declaration of 'Item'
+  
   Player.cpp
   Generating Code...
-  Fear and Hunger clone.vcxproj -> C:\Users\Javie\source\repos\Fear and Hunger clone\x64\Debug\Fear and Hunger clone.exe
