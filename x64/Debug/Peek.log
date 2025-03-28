@@ -1,0 +1,9 @@
+﻿  Item.cpp
+C:\Users\Javie\source\repos\Peek\Player.h(13,3): warning C4150: deletion of pointer to incomplete type 'Item'; no destructor called
+C:\Users\Javie\source\repos\Peek\Player.h(5,7): message : see declaration of 'Item'
+  Peek.cpp
+C:\Users\Javie\source\repos\Peek\Player.h(13,3): warning C4150: deletion of pointer to incomplete type 'Item'; no destructor called
+C:\Users\Javie\source\repos\Peek\Player.h(5,7): message : see declaration of 'Item'
+  Player.cpp
+  Generating Code...
+  Peek.vcxproj -> C:\Users\Javie\source\repos\Peek\x64\Debug\Peek.exe
